@@ -2,6 +2,8 @@
 
 A total system theme based on Gruvbox for Hyprland and associated applications on Arch Linux.
 
+![Gruvbox Theme Screenshot](assets/gruvbox-theme-screenshot.png)
+
 ## Overview
 
 This dotfiles collection provides a cohesive Gruvbox Dark color scheme across:
