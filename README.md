@@ -15,7 +15,6 @@ This dotfiles collection provides a cohesive Gruvbox Dark color scheme across:
 - **Fuzzel** - Application launcher with matching theme
 - **GTK** - System-wide GTK theming
 - **ncspot** - Terminal-based (ncurses) Spotify client with Gruvbox interface
-- **wlogout** - Logout menu styling
 - **swaylock** - Screen lock with Gruvbox colors
 - **ZSH** - Shell configuration with Gruvbox prompt and FZF integration
 
@@ -28,7 +27,7 @@ Install required packages:
 ```bash
 # Official repositories
 sudo pacman -S hyprland waybar swaync foot fuzzel swaylock \
-               wlogout fzf zsh ttf-jetbrains-mono-nerd \
+               fzf zsh ttf-jetbrains-mono-nerd \
                brightnessctl playerctl grim slurp wl-clipboard \
                swaybg pactl
 
@@ -92,8 +91,6 @@ dotfiles/
 │   └── gtk.css             # System-wide GTK styling
 ├── ncspot/                  # Spotify client
 │   └── config.toml         # Gruvbox ncspot theme
-├── wlogout/                 # Logout menu
-│   └── style.css           # Gruvbox logout styling
 ├── swaylock/                # Screen lock
 │   └── config              # Gruvbox lock screen
 ├── sway/                    # Sway compatibility
@@ -130,8 +127,8 @@ dotfiles/
 ### Applications
 - Fuzzel launcher with Gruvbox styling
 - SwayNC notifications matching the theme
-- GTK applications (Thunar) themed consistently
-- Screen lock and logout menus in Gruvbox colors
+- GTK applications themed consistently
+- Screen lock with Gruvbox colors
 
 ## Color Palette
 

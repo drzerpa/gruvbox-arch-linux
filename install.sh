@@ -17,7 +17,7 @@ show_dependencies() {
     echo "Required packages from official Arch repositories (pacman):"
     echo ""
     echo "  sudo pacman -S hyprland waybar swaync foot fuzzel swaylock \\"
-    echo "                 wlogout fzf zsh ttf-jetbrains-mono-nerd \\"
+    echo "                 fzf zsh ttf-jetbrains-mono-nerd \\"
     echo "                 brightnessctl playerctl grim slurp wl-clipboard \\"
     echo "                 swaybg pactl"
     echo ""
@@ -113,7 +113,6 @@ backup_and_link "$DOTFILES_DIR/gtk-3.0/gtk.css" "$HOME/.config/gtk-3.0/gtk.css"
 
 # Application configs
 backup_and_link "$DOTFILES_DIR/ncspot/config.toml" "$HOME/.config/ncspot/config.toml"
-backup_and_link "$DOTFILES_DIR/wlogout/style.css" "$HOME/.config/wlogout/style.css"
 backup_and_link "$DOTFILES_DIR/swaylock/config" "$HOME/.config/swaylock/config"
 
 # Sway configs
