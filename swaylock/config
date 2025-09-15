@@ -1,0 +1,47 @@
+# Gruvbox Dark theme for Swaylock
+
+# Colors (Gruvbox Dark)
+color=282828
+bs-hl-color=fb4934
+caps-lock-bs-hl-color=fb4934
+caps-lock-key-hl-color=b8bb26
+inside-color=3c3836
+inside-clear-color=fabd2f
+inside-caps-lock-color=d79921
+inside-ver-color=83a598
+inside-wrong-color=fb4934
+key-hl-color=b8bb26
+layout-bg-color=282828
+layout-border-color=504945
+layout-text-color=ebdbb2
+line-color=282828
+line-clear-color=282828
+line-caps-lock-color=282828
+line-ver-color=282828
+line-wrong-color=282828
+ring-color=504945
+ring-clear-color=fabd2f
+ring-caps-lock-color=d79921
+ring-ver-color=83a598
+ring-wrong-color=fb4934
+separator-color=282828
+text-color=ebdbb2
+text-clear-color=282828
+text-caps-lock-color=282828
+text-ver-color=282828
+text-wrong-color=282828
+
+# Appearance
+indicator-radius=120
+indicator-thickness=8
+line-uses-inside
+line-uses-ring
+separator-color=00000000
+
+# Font
+font=JetBrains Mono Nerd Font
+font-size=16
+
+# Other
+show-failed-attempts
+daemonize
