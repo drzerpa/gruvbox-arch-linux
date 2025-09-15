@@ -122,6 +122,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias g='git'
+alias claude-vibe='claude --dangerously-skip-permissions'
+alias yolo='claude --dangerously-skip-permissions'
 
 # ZSH-specific configurations
 setopt HIST_VERIFY
