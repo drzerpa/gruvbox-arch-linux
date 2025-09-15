@@ -154,7 +154,14 @@ Key Hyprland shortcuts:
 - `Super + S` - Cycle group windows
 - `Super + Ctrl + S` - Remove window from group
 - `Super + W` - Window mode (vim-like navigation)
-- `Super + R` - Resize mode
+- `Super + R` - Resize mode (vim-like h/j/k/l with fine/coarse control)
+
+### Resize Mode Controls
+When in resize mode (`Super + R`):
+- `h/j/k/l` - Standard resize (10px steps)
+- `Shift + h/j/k/l` - Coarse resize (25px steps)
+- `Ctrl + h/j/k/l` - Fine resize (2px steps)
+- `Escape` or `Return` - Exit resize mode
 
 ## Post-Installation
 
